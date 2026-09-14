@@ -1,9 +1,6 @@
 services:
   db:
-    build:
-      context: .
-      dockerfile: Dockerfile.mysql
-    image: mysql-local:1.0.0
+    image: mysql:8.0
     container_name: todolist-db
     restart: unless-stopped
     environment:
